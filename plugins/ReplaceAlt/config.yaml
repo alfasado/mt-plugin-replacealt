@@ -1,17 +1,17 @@
 name: ReplaceAlt
 id:   ReplaceAlt
-version: 0.1
+version: 0.2
 author_name: Alfasado Inc.
 author_link: http://alfasado.net/
 description: <__trans phrase="It will replace the alt attribute value of the img element in the text immediately following the paragraph.">
 l10n_class: ReplaceAlt::L10N
 callbacks:
-    cms_post_save.entry:
+    data_api_post_save.entry:
         -
-            handler: ReplaceAlt::Callbacks::_cb_cms_post_save_page
+            handler: ReplaceAlt::Callbacks::_cb_api_post_save_entry
             priority: 5
-    cms_post_save.page:
+    data_api_post_save.page:
         -
-            handler: ReplaceAlt::Callbacks::_cb_cms_post_save_page
+            handler: ReplaceAlt::Callbacks::_cb_api_post_save_entry
             priority: 5
 

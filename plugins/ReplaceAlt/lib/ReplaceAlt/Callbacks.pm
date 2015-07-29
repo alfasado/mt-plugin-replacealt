@@ -3,7 +3,7 @@ package ReplaceAlt::Callbacks;
 use strict;
 use warnings;
 
-sub _cb_cms_post_save_page {
+sub _cb_api_post_save_entry {
     my ( $cb, $app, $obj, $original ) = @_;
     my $text = $obj->text;
     my $text_more = $obj->text_more;
