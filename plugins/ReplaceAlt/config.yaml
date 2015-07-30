@@ -3,7 +3,7 @@ id:   ReplaceAlt
 version: 0.2
 author_name: Alfasado Inc.
 author_link: http://alfasado.net/
-description: <__trans phrase="It will replace the alt attribute value of the img element by the text immediately following the paragraph.">
+description: <__trans phrase="It will replace the alt attribute value of the img element in the text immediately following the paragraph.">
 l10n_class: ReplaceAlt::L10N
 callbacks:
     data_api_post_save.entry:
